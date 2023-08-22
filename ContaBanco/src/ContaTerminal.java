@@ -1,13 +1,12 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class ContaTerminal {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
 
-        Integer numero;
+        int numero;
         String agencia;
         String nomeCliente;
-        Float saldo;
+        float saldo;
 
         Scanner scan = new Scanner(System.in);
 
@@ -20,7 +19,7 @@ public class ContaTerminal {
         System.out.println("Por gentileza, digite seu Saldo");
         saldo = scan.nextFloat();
 
-        System.out.println(String.format("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo %.2f já está disponível para saque", nomeCliente, agencia, numero, saldo));
+        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo R$%.2f já está disponível para saque", nomeCliente, agencia, numero, saldo);
 
     }
 }
